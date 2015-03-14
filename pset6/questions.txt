@@ -1,0 +1,23 @@
+0.  TODO an artificial long word said to mean a lung disease caused by inhaling very fine ash and sand dust.
+1.  TODO getrusage() returns resource usage measures for who where who is the first argument passed to the function.
+2.  TODO 16
+3.  TODO so that changes made in calculate() will reflect to before and after.
+4.  TODO main() first ensures that the right number of arguments are used, calls getrusage() and calculate() to measure
+         load times before and after. If there is a specified dictionary file it loads what was passed in that argument, 
+         otherwise it loads the default file specified in #define DICTIONARY. Then it creates a string array word, set 
+         to the length in the #define statement plus one char for the \0 byte. The main for loop reads the file one
+         character at a time, until reaching end of file (EOF). For each character, the loop checks if the char is 
+         alphanumeric or an apostrophe, then updates the index and moves on to the next letter. The loop also checks if 
+         the char is a number and if so ignores it. If the loop reaches '\0' and the index is still smaller than the 
+         length of the longest word plus one extra byte, and it did not contain any numbers, the loop assumes it is a 
+         real word, updates the variable containing the number of words, calls getrusage() again and executes the
+         misspelled function. If misspelled returns true, the main for loop prints the misspelled word, updates the 
+         variable containing the number of misspelled words found, and sets the index back to 0 and returns to the start of 
+         the loop for the next word.
+5.  TODO fgetc only deals with chracters, so we need not worry about non-characters like numbers or symbols.
+6.  TODO The string parameters for check and load do not need to be altered within those functions.
+7.  TODO i use hashtable to implement speller.to avoid collision i use seperate chaining method. Each node contain 1 string
+         of length equals to LENGTH+1 and 1 pointer of type node i.e my node structure is self refrential structure
+8.  TODO the checking time was very large for the first time.
+9.  TODO i use correct hashing algorithm which help me achieve my goal of small checking time
+10. TODO memory allocation show by valgrind is the one problem in my progg which i was not able to chip away.

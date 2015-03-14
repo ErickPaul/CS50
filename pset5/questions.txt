@@ -1,0 +1,28 @@
+0.  TODO bmp support 256 color
+         jpeg support 16.7 million colors
+         gif supports 256 colors
+1.  TODO gif supports animation
+2.  TODO in lossless compression all original data can be recovered when the file is uncompressed but thats not in 
+         the case of lossy compression
+3.  TODO jpeg
+4.  TODO The system modifies the filename's first character to signal that it has
+         been deleted and that the directory entry can be recycled.The system moves all of the file's FAT clusters 
+         to the hard drive's list of free clusters.
+5.  TODO Write NUL bytes (or random characters) to every address on the disk.
+6.  TODO A bunch of typedefs and macros for making integer variables of custom sizes.
+7.  TODO You can fill up exactly the amount of space you want in a file which is good for things like bitmap headers.
+8.  TODO BYTE = 8 bits = 1 byte
+         DWORD= 32 bits = 4 bytes
+         LONG = signed 32 bits = 4 bytes
+         WORD = 16 bits = 2 bytes  
+9.  TODO Hex:    0x424d
+10. TODO bfSize is the total number of bytes in the file
+         biSize is the number of bytes in the info header 
+11. TODO If biHeight is negative, the bitmap is a top-down DIB with the origin at the upper left corner.
+12. TODO biBitCount
+13. TODO due to some error it cant create the file
+14. TODO Because it specifies how many elements you want to read
+15. TODO The padding would be 3, because 3 pixels * 3 bytes per pixel * 3 padding = 12,which is a multiple of 4.
+16. TODO It moves to a specific location in a file.
+17. TODO gives the current location of file pointer
+18. TODO Milo Banana dun it
